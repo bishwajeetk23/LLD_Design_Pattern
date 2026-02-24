@@ -7,6 +7,6 @@ public class PredicateExample {
         Predicate<Integer> isEven = (a) -> a%2==0;
         System.out.println(isEven.test(5));
         UnaryOperator<Integer> sq = x -> x*x;
-        System.out.println(sq.apply(100));;
+        System.out.println(sq.apply(100));
     }
 }

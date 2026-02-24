@@ -2,10 +2,10 @@ package LLD.DESIGN_PATTERN.CREATIONAL_PATTERN.BUILDER_PATTERN.WITH;
 
 
 class Employee{
-    private String eName;
-    private String eId;
-    private String eEmail;
-    private String city;
+    private final String eName;
+    private final String eId;
+    private final String eEmail;
+    private final String city;
     public static class Builder{
         private String eName;
         private String eId;

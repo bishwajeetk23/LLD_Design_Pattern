@@ -1,0 +1,5 @@
+package LLD.DESIGN_PATTERN.STRUCTURAL_PATTERN.ADAPTER_PATTERN.WITHOUT;
+
+public class Main {
+    
+}
