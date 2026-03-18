@@ -67,6 +67,37 @@ class ETANotify implements Notification{
 
 public class CreateThread {
     public static void main(String[] args) {
+        // TODO: use executor framework and completable future and implement it in production grade way.
+        // TODO: implement real notification service subscribing to a topic or queue and processing 10 events concurrently...
+        /*
+        
+            🧠 Real System Design Insight (SDE-2 Thinking)
+
+                In real architecture:
+
+                Notification Service is separate microservice
+
+                Uses Kafka/RabbitMQ
+
+                ThreadPool handles message consumption
+
+                Each notification type is separate strategy
+
+            🎯 If I Were Designing This (Clean Architecture)
+                Apply:
+
+                Strategy Pattern → For notification types
+
+                ExecutorService → For concurrency
+
+                CompletableFuture → For async orchestration
+
+                Factory → To create notification
+
+                Observer → If multiple listeners
+        
+        */
+
         // Blocking main thread
         // Notification mail = new EmailNotify();
         // Notification sms = new SmsNotify();
